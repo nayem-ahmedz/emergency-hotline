@@ -1,5 +1,6 @@
 /* Font : Hind Madurai, Inter and Roboto from google fonts API */
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import "tailwindcss"; */
 
 .hindM-font {
   font-family: "Hind Madurai", sans-serif;
@@ -12,4 +13,29 @@
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
+
+/* custom styles */
+.containerr{
+    max-width: 1800px;
+    margin: auto;
+}
+.top-btns{
+    height: auto;
+    background-color: rgba(65,255,107,0.1);
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.btn-primary{
+    height: auto;
+    font-size: 1rem;
+    background-color: #00A63E;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+.hero-custom{
+    background: linear-gradient(90deg, rgba(1.25,49.64,34.61,1),rgba(0,103,71,1) 50%,rgba(1,50,35,1) 100%);
 }

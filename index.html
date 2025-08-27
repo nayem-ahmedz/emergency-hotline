@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="bg-[#F5FFF6]">
+    <header class="containerr flex flex-col sm:flex-row gap-5 justify-between items-start sm:items-center px-4 py-6">
+        <img src="assets/Logo.png" alt="emergency service logo" />
+        <section class="w-full text-right inter-font">
+            <button class="btn px-4 sm:px-8 py-2 sm:py-[14px] top-btns">
+                <span class="mr-1">0</span>
+                <img src="assets/heart.png" alt="heart icon" class="w-7" />
+            </button>
+            <button class="btn px-4 sm:px-5 py-2 sm:py-[14px] mx-5 top-btns">
+                <span class="mr-1">100</span>
+                <img src="assets/coin.png" alt="coin icon" class="w-7" />
+            </button>
+            <button class="btn px-4 sm:px-9 py-2 sm:py-[14px] text-base font-bold btn-primary">
+                <span>0</span> Copy
+            </button>
+        </section>
+    </header>
+    <main>
+        <section class="hero bg-base-200 hero-custom">
+            <div class="hero-content text-center text-white hindM-font p-5">
+                <div>
+                    <img src="assets/logo-dark.png" alt="logo" class="w-24 mx-auto" />
+                    <h1 class="text-3xl sm:text-[40px] font-bold my-3">Emergency Service Directory</h1>
+                    <p class="sm:text-xl font-semibold">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
