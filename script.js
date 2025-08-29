@@ -7,7 +7,6 @@ for(const icon of heartIcons){
         updateLikes();
     });
 }
-
 // update likes (heart) count
 const likesField = document.getElementById('likes-count');
 function updateLikes(){
@@ -29,12 +28,35 @@ for(const button of allCallButtons){
         const message = `Calling ${service} ${contact}...`;
         coins -= 20;
         updateCoins();
+        updateCallHistory(service, contact);
         alert(message);
     });
 }
-
 // updates available Coins
 const coinField = document.querySelector('#available-coins');
 function updateCoins(){
     coinField.innerText = coins;
 }
+
+// Call History Management
+const historyContiner = document.getElementById('history-container');
+function updateCallHistory(service, contact) {
+    const time = new Date().toLocaleTimeString();
+    const data = `
+        <div>
+            <h3 class="md:text-lg/tight font-semibold inter-font text-[rgba(17,17,17,1)]">
+                ${service}
+            </h3>
+            <p class=""> ${contact} </p>
+        </div>
+        <p class="grow-0 md:text-lg min-w-[92px] text-right"> ${time} </p>
+    `;
+    const newHistory = document.createElement('div');
+    newHistory.classList.add('flex', 'justify-between', 'items-center', 'gap-2', 'p-2', 'md:p-4', 'hindM-font', 'bg-[rgba(250,250,250,1)]', 'mb-2');
+    newHistory.innerHTML = data;
+    historyContiner.appendChild(newHistory);
+}
+// clear history process
+document.getElementById('clear-history-btn').addEventListener('click', function(){
+    historyContiner.innerHTML = '';
+});
