@@ -13,7 +13,7 @@ Responsive for mobile, tablet, laptop and desktop PC
 
 ## Project Timeline
 - created on 27 Aug 2025
-- completed on -- Aug 2025
-- last updated on 28 Aug 2025, BDT 01:27 AM
+- completed on 29 Aug 2025
+- last updated on 29 Aug 2025, BDT 10:00 PM
 
 Feel free to contact for any query!
