@@ -22,7 +22,7 @@
                 <img src="assets/coin.png" alt="coin icon" class="w-7" />
             </button>
             <button class="btn px-4 sm:px-9 py-2 sm:py-[14px] text-base font-bold btn-primary">
-                <span>0</span> Copy
+                <span id="copy-count">0</span> Copy
             </button>
         </section>
     </header>
@@ -46,10 +46,10 @@
                         </div>
                         <h2 class="card-title text-2xl font-bold hindM-font">National Emergency Number</h2>
                         <p class="text-lg text-gray-500">National Emergency</p>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2">999</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2 hotline-number">999</h2>
                         <div class="badge badge-xl bg-gray-100 px-4 py-2 rounded-2xl">All</div>
                         <div class="flex gap-3 mt-6">
-                            <button class="btn grow rounded-lg text-base font-normal text-gray-700">
+                            <button class="btn grow rounded-lg text-base font-normal text-gray-700 copy-btn">
                                 <i class="fa-regular fa-clipboard"></i>
                                 Copy
                             </button>
@@ -68,10 +68,10 @@
                         </div>
                         <h2 class="card-title text-2xl font-bold hindM-font">Police Helpline Number</h2>
                         <p class="text-lg text-gray-500">Police</p>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2">999</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2 hotline-number">999</h2>
                         <div class="badge badge-xl bg-gray-100 px-4 py-2 rounded-2xl">Police</div>
                         <div class="flex gap-3 mt-6">
-                            <button class="btn grow rounded-lg text-base font-normal text-gray-700">
+                            <button class="btn grow rounded-lg text-base font-normal text-gray-700 copy-btn">
                                 <i class="fa-regular fa-clipboard"></i> Copy
                             </button>
                             <button class="btn grow rounded-lg text-base font-normal bg-[rgba(0,166,62,1)] text-white call-btn">
@@ -88,10 +88,10 @@
                         </div>
                         <h2 class="card-title text-2xl font-bold hindM-font">Fire Service Number</h2>
                         <p class="text-lg text-gray-500">Fire Service</p>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2">999</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2 hotline-number">999</h2>
                         <div class="badge badge-xl bg-gray-100 px-4 py-2 rounded-2xl">Fire</div>
                         <div class="flex gap-3 mt-6">
-                            <button class="btn grow rounded-lg text-base font-normal text-gray-700">
+                            <button class="btn grow rounded-lg text-base font-normal text-gray-700 copy-btn">
                                 <i class="fa-regular fa-clipboard"></i>
                                 Copy
                             </button>
@@ -110,10 +110,10 @@
                         </div>
                         <h2 class="card-title text-2xl font-bold hindM-font">Ambulance Service</h2>
                         <p class="text-lg text-gray-500">Ambulance</p>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2">1994-999999</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2 hotline-number">1994-999999</h2>
                         <div class="badge badge-xl bg-gray-100 px-4 py-2 rounded-2xl">Health</div>
                         <div class="flex gap-3 mt-6">
-                            <button class="btn grow rounded-lg text-base font-normal text-gray-700">
+                            <button class="btn grow rounded-lg text-base font-normal text-gray-700 copy-btn">
                                 <i class="fa-regular fa-clipboard"></i>
                                 Copy
                             </button>
@@ -132,10 +132,10 @@
                         </div>
                         <h2 class="card-title text-2xl font-bold hindM-font">Women & Child Helpline</h2>
                         <p class="text-lg text-gray-500">Women & Child Helpline</p>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2">109</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2 hotline-number">109</h2>
                         <div class="badge badge-xl bg-gray-100 px-4 py-2 rounded-2xl">Help</div>
                         <div class="flex gap-3 mt-6">
-                            <button class="btn grow rounded-lg text-base font-normal text-gray-700">
+                            <button class="btn grow rounded-lg text-base font-normal text-gray-700 copy-btn">
                                 <i class="fa-regular fa-clipboard"></i>
                                 Copy
                             </button>
@@ -154,10 +154,10 @@
                         </div>
                         <h2 class="card-title text-2xl font-bold hindM-font">Anti-Corruption Helpline</h2>
                         <p class="text-lg text-gray-500">Anti-Corruption</p>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2">106</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2 hotline-number">106</h2>
                         <div class="badge badge-xl bg-gray-100 px-4 py-2 rounded-2xl">Govt.</div>
                         <div class="flex gap-3 mt-6">
-                            <button class="btn grow rounded-lg text-base font-normal text-gray-700">
+                            <button class="btn grow rounded-lg text-base font-normal text-gray-700 copy-btn">
                                 <i class="fa-regular fa-clipboard"></i>
                                 Copy
                             </button>
@@ -176,10 +176,10 @@
                         </div>
                         <h2 class="card-title text-2xl font-bold hindM-font">Electricity Helpline</h2>
                         <p class="text-lg text-gray-500">Electricity Outage</p>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2">16216</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2 hotline-number">16216</h2>
                         <div class="badge badge-xl bg-gray-100 px-4 py-2 rounded-2xl">Electricity</div>
                         <div class="flex gap-3 mt-6">
-                            <button class="btn grow rounded-lg text-base font-normal text-gray-700">
+                            <button class="btn grow rounded-lg text-base font-normal text-gray-700 copy-btn">
                                 <i class="fa-regular fa-clipboard"></i>
                                 Copy
                             </button>
@@ -198,10 +198,10 @@
                         </div>
                         <h2 class="card-title text-2xl font-bold hindM-font">Brac Helpline</h2>
                         <p class="text-lg text-gray-500">Brac</p>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2">16445</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2 hotline-number">16445</h2>
                         <div class="badge badge-xl bg-gray-100 px-4 py-2 rounded-2xl">NGO</div>
                         <div class="flex gap-3 mt-6">
-                            <button class="btn grow rounded-lg text-base font-normal text-gray-700">
+                            <button class="btn grow rounded-lg text-base font-normal text-gray-700 copy-btn">
                                 <i class="fa-regular fa-clipboard"></i>
                                 Copy
                             </button>
@@ -220,10 +220,10 @@
                         </div>
                         <h2 class="card-title text-2xl font-bold hindM-font">Bangladesh Railway Helpline</h2>
                         <p class="text-lg text-gray-500">Bangladesh Railway</p>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2">163</h2>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-6 mb-2 hotline-number">163</h2>
                         <div class="badge badge-xl bg-gray-100 px-4 py-2 rounded-2xl">Travel</div>
                         <div class="flex gap-3 mt-6">
-                            <button class="btn grow rounded-lg text-base font-normal text-gray-700">
+                            <button class="btn grow rounded-lg text-base font-normal text-gray-700 copy-btn">
                                 <i class="fa-regular fa-clipboard"></i>
                                 Copy
                             </button>
