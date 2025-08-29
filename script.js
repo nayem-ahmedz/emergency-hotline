@@ -22,12 +22,11 @@ for(const button of allCallButtons){
             alert('You dont have enough coins to Call, required at least 20 coins');
             return;
         }
-        // finding the card and extracting service title and hotline number
         const cardBody = e.target.closest('.card-body');
         const service = cardBody.children[1].innerText;
         const contact = cardBody.children[3].innerText;
         const message = `Calling ${service} ${contact}...`;
-        coins -= 20; // decrease coins by 20
+        coins -= 20;
         updateCoins();
         updateCallHistory(service, contact);
         alert(message);
@@ -69,13 +68,10 @@ let copyCounts = Number(copyCountsField.innerText);
 const allCopyBtns = document.getElementsByClassName('copy-btn');
 for(const button of allCopyBtns){
     button.addEventListener('click', function(e){
-        // update copy counts
         copyCounts++;
         copyCountsField.innerText = copyCounts;
-        // get the hotline number
         const cardBody = e.target.closest('.card-body');
         const number = cardBody.querySelector('.hotline-number').innerText;
-        // actual process of copying, used navigator's -> clipboard API
         const message = `Hotline Number is copied : ${number}`;
         navigator.clipboard.writeText(number)
           .then(() => alert(message))
